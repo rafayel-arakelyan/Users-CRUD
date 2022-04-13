@@ -1,15 +1,15 @@
 # UsersCrud
 
-You need to create a simple USERS Crud app.
+###You need to create a simple USERS Crud app.
 You should use routing and implement 3 main pages.
 
-1. Users list
+###1. Users list
 Here you will see brief information of all users `name` and `email` in list format.
 On each user item there should be a button to remove that particular user.
 On each user item there should be a `see more` button which will navigate to `Update User` page
 There should be `Add user` button at the bottom of the list, it should navigate to `Add user` page.
 
-2. Add User
+###2. Add User
 Here you will have a form to create a user.
 
 form fields are as follows:
@@ -18,10 +18,9 @@ form fields are as follows:
   street: required field
   city: required field
   phones: this should use FormArray and should have `+` button near to input to add more phone numbers, at least one phone number is required, also phone   number should be valid and match following pattern: '+' sign following by 8-12 numbers
-  
-Make sure you have error messages for invalid fields.
+  Make sure you have error messages for invalid fields.
 
-3. Update user
+###3. Update user
 Here you will have a form which will be populated from selected user.
 Then you can change values and hit save.
 all the validations are same as in `Add user` page
