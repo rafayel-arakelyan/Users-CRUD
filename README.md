@@ -1,36 +1,39 @@
 # UsersCrud
 
-###You need to create a simple USERS Crud app.
-You should use routing and implement 3 main pages.
+#### You need to create a simple USERS Crud app. You should use routing and implement 3 main pages.
+#### Use Angular material for design.
 
-###1. Users list
-Here you will see brief information of all users `name` and `email` in list format.
-On each user item there should be a button to remove that particular user.
-On each user item there should be a `see more` button which will navigate to `Update User` page
-There should be `Add user` button at the bottom of the list, it should navigate to `Add user` page.
+### 1. Users list
+Here you should show brief information of all users (`name` and `email`) in list format. <br>
+On each user item there should be a button to remove that particular user. <br>
+When you click on user item you should be navigated to `Update User` page for that particular user. <br>
+There should be `Add user` button at the bottom of the list, it should navigate to `Add user` page.<br>
+There should be `Clear` button to delete all users by one click.
 
-###2. Add User
+### 2. Add User
 Here you will have a form to create a user.
 
 form fields are as follows:
-  name: required field
-  email: required field, should be valid email
-  street: required field
-  city: required field
-  phones: this should use FormArray and should have `+` button near to input to add more phone numbers, at least one phone number is required, also phone   number should be valid and match following pattern: '+' sign following by 8-12 numbers
-  Make sure you have error messages for invalid fields.
+  - name: required field
+  - email: required field, should be valid email
+  - street: required field
+  - city: required field
+  - phones: this should use FormArray and should have `+` button near to input to add more phone numbers, at least one phone number is required, also phone   number should be valid and match following pattern: '+' sign following by 8-12 numbers
+  
+Make sure you have error messages for invalid fields.<br>
 
-###3. Update user
-Here you will have a form which will be populated from selected user.
-Then you can change values and hit save.
-all the validations are same as in `Add user` page
+After successfully creating a user you should be automatically navigated to `Users list` page.
 
+### 3. Update user
+Here you will have a form which will be populated from selected user.<br>
+Then you can change values and hit save.<br>
+all the validations are same as in `Add user` page.<br>
 
+After successfully updating a user you should be automatically navigated to `Users list` page.
 
-#Backend API
+<br><br><br>
 
-<br>
-<br>
+# Backend API
 
 ## User Schema
 
