@@ -7,30 +7,32 @@
 
 ### 1. Users list page
 Here you should show brief information of all users (`name` and `email`) in list format. <br>
-On each user item there should be a button to remove that particular user. <br>
-When you click on user item you should be navigated to `Update User` page for that particular user. <br>
+On each user item there should be a `delete` button to remove that particular user. <br>
+On each user item there should be an `edit` button which will navigate to `Update User` page for that particular user. <br>
 There should be `Add user` button at the bottom of the list, it should navigate to `Add user` page.<br>
-There should be `Clear` button to delete all users by one click.
+There should be `Drop users` button to delete all users by one click.
 
 ### 2. Add User page
-Here you will have a form to create a user.
+In this page you will have a form to create a user.
 
 form fields are as follows:
   - name: required field
   - email: required field, should be valid email
   - street: required field
   - city: required field
-  - phones: this should use FormArray and should have `+` button near to input to add more phone numbers, at least one phone number is required, also phone   number should be valid and match following pattern: '+' sign following by 8-12 numbers
+  - phones: this should use FormArray and should have `+` button under the input field to add more fields dynamically. At least one phone number is required, also phone number should be valid and match following pattern: '+' sign following by 8-12 numbers.
   
 Make sure you have error messages for invalid fields.<br>
 
+There should be `create` button which will submit the form and create a user.
 After successfully creating a user you should be automatically navigated to `Users list` page.
 
 ### 3. Update user page
-Here you will have a form which will be populated from selected user.<br>
-Then you can change values and hit save.<br>
+In this page you will have a form to update user. The form should be populated with selected user's data automatically.<br>
+Then you can change values.<br>
 all the validations are same as in `Add user` page.<br>
 
+There should be `update` button which will submit the form and update the user.
 After successfully updating a user you should be automatically navigated to `Users list` page.
 
 #### You are free to implemnt additional features: (asking for confirmation before deleting user, multi selection in users list to perform bulk actions and so on).
@@ -41,8 +43,8 @@ After successfully updating a user you should be automatically navigated to `Use
 
 ## User Schema
 
-Below represented the interface of user <br>
-First goes key, then value type, then validations
+Below represented the interface and validations of user model in backend <br>
+format is `key: type (validations)`
 
  - name: string (required)
  - email: string (required, unique, validEmail)
@@ -53,6 +55,8 @@ First goes key, then value type, then validations
   
 <br>
 <br>
+
+## CRUD Endpoints
 
 ##### `Get all users`
 GET - http://52.14.58.85:4000/api/users
